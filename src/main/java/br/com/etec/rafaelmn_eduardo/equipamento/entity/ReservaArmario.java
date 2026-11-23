@@ -1,12 +1,15 @@
 package br.com.etec.rafaelmn_eduardo.equipamento.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "reserva_armario")
+@Getter
+@Setter
 public class ReservaArmario {
 
     @Id
